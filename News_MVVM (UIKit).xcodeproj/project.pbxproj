@@ -9,21 +9,34 @@
 /* Begin PBXBuildFile section */
 		A1943F802AFB8742004714CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1943F7F2AFB8742004714CC /* AppDelegate.swift */; };
 		A1943F822AFB8742004714CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1943F812AFB8742004714CC /* SceneDelegate.swift */; };
-		A1943F842AFB8742004714CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1943F832AFB8742004714CC /* ViewController.swift */; };
-		A1943F872AFB8742004714CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1943F852AFB8742004714CC /* Main.storyboard */; };
 		A1943F892AFB8747004714CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1943F882AFB8747004714CC /* Assets.xcassets */; };
 		A1943F8C2AFB8747004714CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1943F8A2AFB8747004714CC /* LaunchScreen.storyboard */; };
+		A1943F9A2AFB8822004714CC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1943F992AFB8822004714CC /* Home.storyboard */; };
+		A1943F9C2AFB883B004714CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1943F9B2AFB883B004714CC /* HomeViewController.swift */; };
+		A1943F9F2AFB88CD004714CC /* UiViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1943F9E2AFB88CD004714CC /* UiViewController+Extension.swift */; };
+		A1943FA12AFB8CB0004714CC /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1943FA02AFB8CB0004714CC /* WebService.swift */; };
+		A1943FA32AFB92C3004714CC /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1943FA22AFB92C3004714CC /* NewsTableViewCell.swift */; };
+		A1943FA52AFB9DCC004714CC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1943FA42AFB9DCC004714CC /* Article.swift */; };
+		A1943FA72AFBAC3A004714CC /* ArticlesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1943FA62AFBAC3A004714CC /* ArticlesListViewModel.swift */; };
+		A1943FAA2AFCB328004714CC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A1943FA92AFCB328004714CC /* SDWebImage */; };
+		A1B591E72AFCEC8500FC8330 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B591E62AFCEC8500FC8330 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1943F7C2AFB8742004714CC /* News_MVVM (UIKit).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News_MVVM (UIKit).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1943F7F2AFB8742004714CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1943F812AFB8742004714CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1943F832AFB8742004714CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A1943F862AFB8742004714CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1943F882AFB8747004714CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1943F8B2AFB8747004714CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1943F8D2AFB8747004714CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1943F992AFB8822004714CC /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		A1943F9B2AFB883B004714CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A1943F9E2AFB88CD004714CC /* UiViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController+Extension.swift"; sourceTree = "<group>"; };
+		A1943FA02AFB8CB0004714CC /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		A1943FA22AFB92C3004714CC /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		A1943FA42AFB9DCC004714CC /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		A1943FA62AFBAC3A004714CC /* ArticlesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListViewModel.swift; sourceTree = "<group>"; };
+		A1B591E62AFCEC8500FC8330 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1943FAA2AFCB328004714CC /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +70,69 @@
 		A1943F7E2AFB8742004714CC /* News_MVVM (UIKit) */ = {
 			isa = PBXGroup;
 			children = (
+				A1943F9D2AFB889C004714CC /* Extensions */,
+				A1943F972AFB87A0004714CC /* ViewModels */,
+				A1943F962AFB879B004714CC /* Models */,
+				A1943F942AFB8768004714CC /* Views */,
+				A1943F932AFB8752004714CC /* Sevices */,
 				A1943F7F2AFB8742004714CC /* AppDelegate.swift */,
 				A1943F812AFB8742004714CC /* SceneDelegate.swift */,
-				A1943F832AFB8742004714CC /* ViewController.swift */,
-				A1943F852AFB8742004714CC /* Main.storyboard */,
 				A1943F882AFB8747004714CC /* Assets.xcassets */,
 				A1943F8A2AFB8747004714CC /* LaunchScreen.storyboard */,
 				A1943F8D2AFB8747004714CC /* Info.plist */,
 			);
 			path = "News_MVVM (UIKit)";
+			sourceTree = "<group>";
+		};
+		A1943F932AFB8752004714CC /* Sevices */ = {
+			isa = PBXGroup;
+			children = (
+				A1943FA02AFB8CB0004714CC /* WebService.swift */,
+			);
+			path = Sevices;
+			sourceTree = "<group>";
+		};
+		A1943F942AFB8768004714CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1943F982AFB87F8004714CC /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1943F962AFB879B004714CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1943FA42AFB9DCC004714CC /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1943F972AFB87A0004714CC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A1943FA62AFBAC3A004714CC /* ArticlesListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A1943F982AFB87F8004714CC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1943F992AFB8822004714CC /* Home.storyboard */,
+				A1943F9B2AFB883B004714CC /* HomeViewController.swift */,
+				A1943FA22AFB92C3004714CC /* NewsTableViewCell.swift */,
+				A1B591E62AFCEC8500FC8330 /* DetailsViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A1943F9D2AFB889C004714CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1943F9E2AFB88CD004714CC /* UiViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +151,9 @@
 			dependencies = (
 			);
 			name = "News_MVVM (UIKit)";
+			packageProductDependencies = (
+				A1943FA92AFCB328004714CC /* SDWebImage */,
+			);
 			productName = "News_MVVM (UIKit)";
 			productReference = A1943F7C2AFB8742004714CC /* News_MVVM (UIKit).app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +182,9 @@
 				Base,
 			);
 			mainGroup = A1943F732AFB8742004714CC;
+			packageReferences = (
+				A1943FA82AFCB328004714CC /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = A1943F7D2AFB8742004714CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +199,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1943F9A2AFB8822004714CC /* Home.storyboard in Resources */,
 				A1943F8C2AFB8747004714CC /* LaunchScreen.storyboard in Resources */,
 				A1943F892AFB8747004714CC /* Assets.xcassets in Resources */,
-				A1943F872AFB8742004714CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +212,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1943F842AFB8742004714CC /* ViewController.swift in Sources */,
+				A1943FA52AFB9DCC004714CC /* Article.swift in Sources */,
+				A1943F9F2AFB88CD004714CC /* UiViewController+Extension.swift in Sources */,
+				A1B591E72AFCEC8500FC8330 /* DetailsViewController.swift in Sources */,
 				A1943F802AFB8742004714CC /* AppDelegate.swift in Sources */,
+				A1943FA72AFBAC3A004714CC /* ArticlesListViewModel.swift in Sources */,
+				A1943FA32AFB92C3004714CC /* NewsTableViewCell.swift in Sources */,
 				A1943F822AFB8742004714CC /* SceneDelegate.swift in Sources */,
+				A1943FA12AFB8CB0004714CC /* WebService.swift in Sources */,
+				A1943F9C2AFB883B004714CC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A1943F852AFB8742004714CC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1943F862AFB8742004714CC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A1943F8A2AFB8747004714CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +364,6 @@
 				INFOPLIST_FILE = "News_MVVM (UIKit)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +391,6 @@
 				INFOPLIST_FILE = "News_MVVM (UIKit)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +428,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1943FA82AFCB328004714CC /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1943FA92AFCB328004714CC /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1943FA82AFCB328004714CC /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1943F742AFB8742004714CC /* Project object */;
 }
