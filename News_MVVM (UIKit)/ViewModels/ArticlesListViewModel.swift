@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 public enum State {
     case loading
@@ -17,31 +18,14 @@ public enum State {
 class ArticlesListViewModel{
     
     private let apiService: WebService
-    private var articles: [Article] = []
     
-    private var cellViewModels: [ArticleCellViewModel] = []{
-        didSet{
-            self.reloadTableViewClosure?()
-        }
-    }
-    var state: State = .empty{
-        didSet{
-            self.updateLoadingStatus?()
-        }
-    }
-    var alertMessage: String? {
-        didSet{
-            self.showAlertClosure?()
-        }
-    }
+    @Published var state: State = .empty
+    @Published var alertMessage: String?
+    @Published var cellViewModels: [ArticleCellViewModel] = []
     
     var numberOfCells: Int{
         return cellViewModels.count
     }
-    
-    var reloadTableViewClosure: (()->())?
-    var showAlertClosure: (()->())?
-    var updateLoadingStatus: (()->())?
     
     init(apiService: WebService = ApiService()) {
         self.apiService = apiService
@@ -72,7 +56,7 @@ class ArticlesListViewModel{
     }
     private func processFetchedArticles(articles: [Article]) {
         //this process like cashing to show all articles at once not one by one
-        self.articles = articles
+//        self.articles = articles
         var cellsVM: [ArticleCellViewModel] = []
         for article in articles {
             cellsVM.append(ArticleCellViewModel(article: article))

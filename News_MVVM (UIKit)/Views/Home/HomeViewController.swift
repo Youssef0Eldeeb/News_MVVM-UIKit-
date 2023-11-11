@@ -7,12 +7,14 @@
 
 import UIKit
 import SDWebImage
+import Combine
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var articleTableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    private var cancellables: Set<AnyCancellable> = []
     lazy var viewModel: ArticlesListViewModel = {
         return ArticlesListViewModel()
     }()
@@ -34,19 +36,21 @@ class HomeViewController: UIViewController {
         articleTableView.rowHeight = UITableView.automaticDimension
     }
     private func initViewModel(){
-        viewModel.showAlertClosure = {[weak self] () in
+
+        viewModel.initFetch()
+
+        viewModel.$alertMessage.sink { [weak self] message in
             DispatchQueue.main.async {
-                if let message = self?.viewModel.alertMessage{
+                if let message = message{
                     self?.showAlertMsg(message)
                 }
             }
-        }
+        }.store(in: &cancellables)
         
-        viewModel.updateLoadingStatus = {[weak self] () in
-            guard let self = self else {return}
+        viewModel.$state.sink { [weak self] state in
             DispatchQueue.main.async { [weak self]  in
                 guard let self = self else {return}
-                switch self.viewModel.state {
+                switch state {
                 case .empty, .error:
                     self.activityIndicator.stopAnimating()
                     UIView.animate(withDuration: 0.3) {
@@ -64,15 +68,14 @@ class HomeViewController: UIViewController {
                     }
                 }
             }
-        }
+        }.store(in: &cancellables)
         
-        viewModel.reloadTableViewClosure = {[weak self] () in
+        viewModel.$cellViewModels.sink { [weak self] _ in
             DispatchQueue.main.async {
                 self?.articleTableView.reloadData()
             }
-        }
+        }.store(in: &cancellables)
         
-        viewModel.initFetch()
     }
     
     private func showAlertMsg(_ message: String){
